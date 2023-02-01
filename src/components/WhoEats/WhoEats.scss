@@ -1,0 +1,92 @@
+.whoEats__back {
+    background-image: url(../../assets/img/WhoEatsBg.png);
+    background-repeat: no-repeat;
+    height: 1000px;
+    background-position: center;
+    // background-size: contain;
+}
+.whoEats__text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    span {
+        font-size: 55px;
+        font-weight: 500;
+        color: #4d3300;
+        margin-bottom: 77px;
+    }
+    .whoEat__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 60%;
+        li {
+            width: 300px;
+            margin-bottom: 30px;
+            font-size: 24px;
+            font-weight: 400;
+            color: #4d3300;
+        }
+    }
+}
+
+@media only screen and (max-width: 1152px) {
+    .whoEats__text {
+        span {
+            font-size: 50px;
+        }
+    }
+}
+@media only screen and (max-width: 1102px) {
+    .whoEats__text {
+        span {
+            font-size: 45px;
+        }
+        .whoEat__list {
+            li {
+                font-size: 20px;
+            }
+        }
+    }
+    .whoEats__back {
+        height: 800px;
+    }
+}
+
+@media only screen and (max-width: 1074px) {
+    .whoEats__text {
+        margin: 0 auto;
+        span {
+            font-size: 35px;
+        }
+        .whoEat__list {
+            li {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .whoEats__text {
+        margin: 0 auto;
+        span {
+            font-size: 35px;
+            margin-left: 20px;
+        }
+        .whoEat__list {
+            height: 150px;
+            width: 425px;
+            overflow-x: scroll;
+            margin-left: 20px;
+            -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+-moz-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+            li {
+                font-size: 18px;
+                margin-left: 25px;
+            }
+        }
+    }
+}

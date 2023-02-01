@@ -1,0 +1,72 @@
+.howUse{
+    background-image: url(../../assets/img/howUse__bg.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    // background-size: contain;
+    background-position: center top;
+    margin-top: -10px;
+    flex-grow: 1;
+    // background-size: contain;
+}
+.howUse__text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+    span{
+        color: #fff;
+        font-size: 36px;
+        font-weight: 500;
+        text-align: left;
+        padding-top: 90px;
+        padding-bottom: 30px;
+    }
+    p{
+        font-size: 20px;
+        font-weight: 400;
+        color: #fff;
+        width: 740px;
+        text-align: left;
+        line-height: 30px;
+        padding-bottom: 40px;
+    }
+}
+.howUse__text__child{
+    display: flex;
+    flex-direction: column;
+    // align-items: flex-end;
+    justify-content: center ;
+}
+@media only screen and (max-width: 1152px) {
+    .howUse__text{
+        p{
+            font-size: 18px;
+        }
+    }
+}
+@media only screen and (max-width: 1102px){
+    .howUse{
+        background-size: cover;
+        background-position: top;
+    }
+}
+
+@media only screen and (max-width: 990px){
+    .howUse__text{
+        span{
+            font-size: 30px;
+        }
+        p{
+            font-size: 16px;
+            padding-right: 10px;
+            text-indent: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .howUse{
+        display: flex;
+        justify-content: center;
+    }
+}
